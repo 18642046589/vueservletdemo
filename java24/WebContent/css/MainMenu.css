@@ -1,0 +1,151 @@
+/* 全局样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+#mainBox{
+	width: 1024px;
+	margin: 0 auto;
+}
+/* 图片格式 */
+#mainBox .navi_img img{
+	width: 1024px;
+	height: 600px;
+	position: relative;
+}
+#mainBox .navi_img{
+	margin: 0 auto;
+}
+/* LOGO样式 相对图片定位*/
+#mainBox .navi_img h1{
+	position: absolute;
+	font-size: 24px;
+	top: 30px;
+	left: 500px;
+	color: #FFFFFF;
+	border-radius: 10px;
+}
+/* 主标题样式 */
+#mainBox .father_text{
+	width: 750px;
+	font-size: 50px;
+	font-weight: 600;
+	color: #000000;
+	position: absolute;
+	top:180px;
+	left: 610px;
+
+}
+/* 副标题样式 */
+#mainBox .childen_text{
+	width: 750px;
+	font-size: 30px;
+	font-weight: 600;
+	color: #000000;
+	position: absolute;
+	top:270px;
+	left: 800px;
+}
+/* 按钮父盒子位置样式，相对于图片定位 */
+#mainBox .navi_log_btn{
+	width: 300px;
+	position: absolute;
+	top:30px;
+	left: 1200px;
+}
+#mainBox .navi_log_btn span{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+/* 按钮样式 */
+#mainBox .navi_log_btn input{
+	width: 100px;
+	height: 44px;
+	background-color: #FFFFFF00;
+	color: #FFFFFF;
+	outline: none;
+	border: none;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+/* 按钮划过样式 */
+#mainBox .navi_log_btn input:hover{
+	border: 4px solid orange;
+}
+/* 按钮点击样式 */
+#mainBox .navi_log_btn input:active{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+/* 数据父盒子样式 */
+#mainBox .numBox{
+	text-align: center;
+	width: 1024px;
+	height: 300px;
+}
+/* 数据盒子整体样式 */
+#mainBox .numBox .num{
+	width: 200px;
+	height: 150px;
+	margin: 100px 68px;
+	float: left;
+}
+/* 产品介绍 */
+#mainBox .product{
+	width: 1024px;
+	text-align: center;
+}
+/* 产品介绍背景样式 */
+#mainBox .product .product_bgc{
+	background-color: #F2F2F2;
+	width: 1024px;
+	height: 600px;
+}
+#mainBox .product .product_bgc p{
+	margin-top: 30px;
+	color: #666666;
+}
+#mainBox .thanks{
+	width: 1024px;
+	height: 300px;
+	text-align: center;
+}
+/* 鸣谢背景样式 */
+#mainBox .thanks .thanks_bgc{
+	width: 1024px;
+
+}
+/* 鸣谢主标题样式 */
+#mainBox .thanks .thanks_bgc h1{
+	margin-top: 100px;
+}
+/* 鸣谢副标题样式 */
+#mainBox .thanks .thanks_bgc p{
+	margin-top: 30px;
+	color: #666666;
+}
+#mainBox .thanks .thanks_bgc img{
+	width: 200px;
+	height: 100px;
+	margin: 50px 100px;
+	float: right;
+
+}
+#mainBox .thanks .thanks_bgc .thanks_logo{
+	width: 800px;
+	height: 100px;
+	margin: 0 auto;
+}
+#mainBox .bto_text{
+	width: 1024px;
+	height: 300px;
+	text-align: center;
+	background-color: #F2F2F2;
+}
+#mainBox .bto_text .bto_text_top{
+	padding: 50px 0;
+}
+#mainBox .bto_text .bto_text_top p{
+	margin-top: 30px;
+	color: #666666;
+}

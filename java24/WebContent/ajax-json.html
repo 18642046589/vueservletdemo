@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+	function loadXMLDoc() {
+		var xmlhttp;
+		var txt, x, i;
+		if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+		} else {// code for IE6, IE5
+			xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				result = xmlhttp.responseText;
+				//alert(result);
+				// 使用eval函数使返回的字符串变成js对象
+				var users = eval("(" + result + ")");
+				for (var i = 0; i < users.length; i++) {
+					// 获取单个user信息
+					var user = users[i];
+					// 此处已经知道user数据的格式，故可以直接使用
+					appendRow(user.username, user.age);
+				}
+
+			}
+		}
+		xmlhttp.open("GET", "user.js", true);
+		xmlhttp.send();
+	}
+	// 添加新行
+
+	function appendRow(username, age) {
+		var ui = document.getElementById("userinfo");
+		// 添加新行
+		var newRow = ui.insertRow(ui.rows.length);
+		// 添加新的单元格
+		newRow.insertCell(0).innerHTML = username;
+		newRow.insertCell(1).innerHTML = age;
+	}
+</script>
+</head>
+
+<body>
+	<h2>My Book Collection:</h2>
+	<table id="userinfo">
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+		</thead>
+	</table>
+	<button type="button" onclick="loadXMLDoc()">获得用户列表</button>
+</body>
+</html>

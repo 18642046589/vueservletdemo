@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>私人FM</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="skin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="skin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<style type="text/css">
+			#hint {
+				font-size: 6px;
+			}
+
+			#pass_hint {
+				font-size: 6px;
+			}
+
+			#passpass_hint {
+				font-size: 6px;
+			}
+
+			#email_hint {
+				font-size: 6px;
+
+			}
+
+			#phone_hint {
+				font-size: 6px;
+
+			}
+
+
+
+			#code_box {
+				width: 160px;
+				height: 36px;
+				background-color: ;
+				line-height: 36px;
+				text-align: center;
+				color: black;
+				font-size: 16px;
+				margin: 30px auto;
+				cursor: pointer;
+				-webkit-user-select: none;
+			}
+
+
+
+
+
+			.left {
+				color: #FFF;
+				font-size: 40px;
+				position: absolute;
+				left: 660px;
+				top: 70px;
+
+			}
+
+			.right {
+				font-size: 25px;
+				float: right;
+				margin: 30px;
+				margin-bottom: 0px;
+				position: absolute;
+				right: 20px;
+				top: 50px;
+			}
+
+			.right p a {
+				color: #FFF;
+
+			}
+
+			#left_bot {
+				color: #A6A6A6;
+			}
+
+			body {
+				background-image: url();
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				background: url(skin/images/4.jpg);
+
+			}
+
+			#x {
+				width: 900px;
+
+				text-align: center;
+				margin-top: 150px;
+				margin-left: 300px;
+				font-style: 宋体;
+				font-size: 30px;
+				color: black;
+				position: relative;
+				opacity: 0.8;
+
+
+			}
+
+			form {
+				width: 500px;
+				height: 350px;
+				margin: 0 auto;
+				font-size: 20px;
+				background-color: white;
+				text-align: right;
+				color: black;
+				margin-top: 50px;
+				/* 边框圆角 */
+				border-radius: 20px;
+
+
+			}
+
+			.ta {
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+
+			input {
+				height: 20px;
+				width: 250px;
+				margin-top: 5px;
+				margin-bottom: 2px;
+				border: 1px solid #A6A6A6;
+				/* 设置边框圆角 */
+				border-radius: 5px;
+				padding-left: 10px;
+				float: left;
+			}
+
+			/*input标签下的属性选择器*/
+			input[type="submit"],
+			input[type="reset"] {
+				height: 30px;
+				width: 5em;
+				margin-top: 7px;
+				margin-left: 0px;
+				
+			}
+            input[type="checkbox"] {
+				height: 20px;
+				width:50px;
+				
+				margin-left: 0px;
+				
+			}
+			.sex {
+				height: 15px;
+				width: 4em;
+
+				font-size: 10px;
+			}
+
+			#btn_sub {
+				width: 150px;
+				height: 40px;
+				background-color: #183034;
+				border: 1px solid #183034;
+
+			}
+
+			.td_left {
+				width: 20px;
+				height: 20px;
+				padding-left: 50px;
+				text-align: right;
+			}
+
+			.td_right {
+				text-align: left;
+				border-radius: 5px;
+				padding-left: 10px;
+				float: right;
+			}
+
+			.center {
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				right: 500px;
+				top: 230px;
+				font-weight: bold;
+
+			}
+
+			.size {
+				font-weight: bold;
+			}
+
+			.size {
+				width: 143px;
+				height: 40px;
+				font-size: 20px;
+			}
+
+			.search {
+				float: right;
+				/*将div标签向右对齐*/
+				margin-right: 20px;
+				margin-top: 15px;
+				border-color: #333333;
+			}
+		</style>
+
+
+	<body background="jpg/002%20(1).jpg" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- header -->
+
+		<div class="header-w3layouts">
+			<!-- Navigation -->
+			<nav class="navbar  navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-jpeg page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span
+							 class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						<h1><a class="navbar-brand" href="index.html" style="">私人FM </a></h1>
+
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+							<li>
+								<div class="search"><input type="text" class="form-control input-sm no-border rounded" placeholder="搜索 歌曲, 专辑...">
+								</div>
+							</li>
+							<li><a href="page1.html" title="注册" target="blank">注册</a></li>
+							<li><a href="page2.html" title="排行" target="blank">排行</a></li>
+							<li><a href="page3.html" title="电台" target="blank">电台</a></li>
+							<li><a a href="page4.html" title="电台" target="blank">主播</a></li>
+							<li><a href="page5.html" title="联系" target="blank">联系</a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>
+		</div>
+
+
+		<!--注册表单界面-->
+
+
+		</div>
+
+
+
+		</div>
+
+		</div>
+		<script type="text/javascript">
+			function shoeTips(spanId, tips) {
+				var span = document.getElementById(spanId);
+				span.innerHTML = tips;
+			} /** * 校验用户名 */
+			function hint() {
+				var username = document.getElementById("username").value;
+				var hint = document.getElementById("hint");
+				if (username.length < 6 || username.length > 15) {
+					hint.innerHTML = "不可用";
+					document.getElementById("username").style.color = "red";
+					return false;
+				} else {
+					hint.innerHTML = "用户名合格";
+					document.getElementById("username").style.color = "green";
+					return true;
+				}
+			}
+
+			function checkPass() {
+				var value = document.getElementById("password").value;
+				var hint = document.getElementById("pass_hint");
+				if (value.length < 6 || value.length > 15) {
+					hint.innerHTML = "不可用";
+					return false;
+				} else {
+					hint.innerHTML = "密码合格";
+					return true;
+				}
+			}
+
+			function checkPass2() {
+				var papavalue = document.getElementById("passpassword").value;
+				var value = document.getElementById("password").value;
+				var papahint = document.getElementById("passpass_hint");
+				if (papavalue != value) {
+					papahint.innerHTML = "两次密码不一致";
+					return false;
+				} else {
+					papahint.innerHTML = "";
+					return true;
+				}
+			}
+
+			function checkEmail(strEmail) {
+				var emailReg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+				if (emailReg.test(strEmail)) {
+					return true;
+				} else {
+					return false;
+				}
+			};
+
+			function emailCheck() {
+				var emailValue = document.getElementById("email").value;
+				var email_hint = document.getElementById("email_hint");
+				var flag = checkEmail(emailValue);
+				if (flag) {
+					email_hint.innerHTML = "邮箱格式正确";
+					return true;
+				} else {
+					email_hint.innerHTML = "邮箱格式错误";
+					return false;
+				}
+			}
+
+			function checkMobile(strMobile) {
+				var regu = /^[1][345678][0-9]{9}$/;
+				var re = new RegExp(regu);
+				if (re.test(strMobile)) {
+					return true;
+				} else {
+					return false;
+				}
+			};
+
+			function phoneCheck() {
+				var phone = document.getElementById("phone").value;
+				var phone_hint = document.getElementById("phone_hint");
+				var flag = checkMobile(phone);
+				if (flag) {
+					phone_hint.innerHTML = "手机号格式正确";
+					return true;
+				} else {
+					phone_hint.innerHTML = "手机号格式错误";
+					return false;
+				}
+			}
+
+			function phoneHide() {
+				var phone_hint = document.getElementById("phone_hint");
+				phone_hint.innerHTML = "";
+			}
+
+			function checkForm() {
+				var flag = emailCheck() && checkPass() && checkPassPass() && hint() && phoneCheck();
+				return flag;
+			}
+		     
+		</script>
+		</head>
+
+		<body>
+
+			<!-- 左边部分 -->
+			<div class="left">
+				<p>Welcome</p>
+			</div>
+			<!-- 右边部分 -->
+			<div class="right ">
+				<p>
+					<font color="#FFF">已有账号</font><a href="login.html"><ins>登录</ins> </a>
+				</p>
+			</div>
+			<div id="x">
+				<form action="user/registerServlet" onsubmit="return checkForm()" method="post">
+					<table class="ta">
+						<tr>
+							<td>账号：</td>
+							<td><input type="text" id="username" name="username" placeholder="6-15位" οnblur="hint_hide()" onkeyup="hint()"
+								 required /><span id="hint"></span>
+							</td>
+
+						</tr>
+						<tr>
+							<td>密码：</td>
+							<td><input type="password" id="password" name="password" placeholder="6-15位" οnblur="pass_hide()" onkeyup="checkPass()"
+								 required /><span id="pass_hint"></span></td>
+						</tr>
+						<tr>
+							<td>确认密码：</td>
+							<td><input type="password" id="passpassword" name="passpassword" οnblur="passpassword()" required onkeyup="checkPass2()" /><span
+								 id="passpass_hint"></span></td>
+						</tr>
+						<tr>
+							<td>Email：</td>
+							<td><input id="email" onblur="emailHide()" onkeyup="emailCheck()" type="email" name="email" placeholder="邮箱" /><span
+								 id="email_hint"></span></td>
+						</tr>
+						<tr>
+							<td>手机号：</td>
+							<td><input id="phone" type="text" onblur="phoneHide()" onkeyup="phoneCheck()" name="phone" placeholder="手机号">
+								<span id="phone_hint"></span>
+							</td>
+						</tr> 
+
+						<tr>
+							<td>出生日期：</td>
+							<td> <input type="date" name="user_date" required /></td>
+
+						</tr>
+						<!-- <tr>
+							<td>出生日期：</td>
+							<td> <input type="checkbox" name="hobby"  />打篮球</td>
+
+						</tr> -->
+						<div class="center">
+							<input type="submit" id="btn_sub" class="size" onmouseover="this.style.backgroundPosition='left -40px'"
+							 onmouseout="this.style.backgroundPosition='left top'" value="注册" οnclick="return validate()" />
+						</div>
+					</table>
+				</form>
+			</div>
+
+		</body>
+</html>

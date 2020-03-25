@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#main{
+	width: 1024px;
+	margin: 0 auto;
+}
+/* 导航栏 */
+#navtop{
+	width: auto;
+	height: 80px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+	 background-blend-mode: multiply,multiply;
+	padding: 0;
+	position: relative;
+}
+/* LOGO样式 相对图片定位*/
+#navtop .logo h1{
+	position: absolute;
+	font-size: 30px;
+	top: 20px;
+	left: 20px;
+	color: #FFFFFF;
+}
+#navtop h1:hover{
+	color: orange;
+}
+/* 介绍div */
+#main .explain{
+	width: 400px;
+	height: 300px;
+	border-radius: 20px;
+	background-color: #EEEEEE;
+	position: absolute;
+	margin: 150px  auto;
+}
+/* 介绍大标题 */
+#main .explain h1{
+	font-size: 48px;
+	margin: 0 2%;
+}
+/* 介绍内容 */
+#main .explain .explainHead{
+	font-size: 16px;
+	margin: 6% 2%;
+	
+}
+/* 介绍内容2 */
+#main .explain .explainTxt{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 6% 40%;
+}
+/* 了解详情按钮 */
+#main .explain input{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 2% 10% 10% 70%;
+}
+/* 了解详情按钮点击样式 */
+#main .explain input:hover{
+	border: 2px solid #FFFFFF;	
+}
+#main .explain input:active{
+	background: #FFFFFF;	
+}
+/* 登录窗口整体CSS */
+#logWindows{
+	width: 300px;
+	height: 400px;
+	/* 设置主窗体背景颜色 透明度60% */
+	background-color: #00000050;
+	margin: 150px 100px;
+	border-radius: 16px;
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+	float: right;
+}
+/* 标题CSS */
+#logWindows h1{
+	padding-top: 8%;
+}
+#logWindows .logUser{
+	padding: 0;
+	margin-top: 20px;
+}
+#logWindows .logUser a{
+	text-decoration: none;
+}
+#logWindows .logUser span{
+	color: #FFFFFF;
+}
+#logWindows .logUser span:hover{
+	color: #beebe9;
+}
+#logWindows .passWordFind{
+	padding: 0;
+	margin-top: 10px;
+}
+#logWindows .passWordFind a{
+	text-decoration: none;
+}
+#logWindows .passWordFind span{
+	color: #FFFFFF;
+}
+#logWindows .passWordFind span:hover{
+	color: #beebe9;
+}
+/* 输入框div整体CSS */
+#logWindows .logBox {
+	margin: 18% auto 0 auto;
+
+}
+.logBox .code{
+	font-size: 30px;
+}
+/* 两个输入框CSS */
+.logBox input{
+	background-color: #FFFFFF00;
+	border: none;
+	border-bottom: 2px solid #FFFFFF;
+	outline: none;
+	width: 200px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #FFFFFF;
+	/* 让输入框中的placeholder缩进一点 */
+	padding: 0 2%;
+	/* 两个输入框之间距离高度为16px */
+	margin: 4% 0;
+}
+#logWindows .logBtn{
+	margin-top: 10px;
+}
+#logWindows .logBtn input{
+	width: 160px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	/* 设置按钮渐变背景色 */
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-top: 30px;
+	
+}
+#logWindows .logBtn input:hover{
+	border: 2px solid #FFFFFF;
+}
+#logWindows .logBtn input:active{
+	background: #FFFFFF;
+}
+
+

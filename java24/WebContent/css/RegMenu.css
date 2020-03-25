@@ -1,0 +1,122 @@
+/* 全局样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 主盒子样式 */
+#regMainMenu{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+/* 导航栏样式 */
+#regMainMenu #regNavi{
+	width: 1024px;
+	height: 80px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+	 background-blend-mode: multiply,multiply;
+	position: relative;
+}
+/* LOGO样式 */
+#regNavi .logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#regNavi a{
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#regNavi a:hover{
+	color: orange;
+}
+#regMainMenu .imgBox{
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 300px;
+	left: 100px;
+}
+#regMainMenu .imgBox .wrap img{
+	width: 400px;
+	height: 300px;
+}
+#regMainMenu .imgBox .btn{
+	padding: 0;
+	margin-top: -130px;
+}
+/* 登录窗口主体样式 */
+#regMainMenu #regBox{
+	width: 300px;
+	height: 600px;
+	background-color: #00000050;
+	margin: 100px 600px;
+	text-align: center;
+	padding-top: 1px;
+	border-radius: 10px;
+	position: absolute;
+	top: 100px;
+	z-index: 100;
+}
+/* 登录窗口主标题样式 */
+#regBox h1{
+	margin-top: 60px;
+	color: #FFFFFF;
+}
+/* 登录窗口中表单样式 */
+#regBox input{
+	width: 200px;
+	height: 30px;
+	margin-top: 20px;
+	background-color: #FFFFFF00;
+	border: none;
+	border-bottom: 2px solid #FFFFFF ;
+	outline: none;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 0 10px;
+}
+#regBox .Box .regcode{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+/* 登录窗口中阅读条款复选框样式 */
+#regBox .Box #terms{
+	margin-top: 0;
+	width: 15px;
+	height: 15px;
+	margin-top: 30px;
+}
+/* 登录窗口中阅读条款文本样式 */
+#regBox .Box #termsText{
+	color: #FFFFFF;
+}
+/* 登录窗口a标签超链样式 */
+#regBox .Box #termsText a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* 超链悬停样式 */
+#regBox .Box #termsText a:hover{
+	color: #8ED6EE;
+}
+/* 按钮悬停样式 */
+#regBox #regBtn input:hover{
+	border: 2px solid #FFFFFF;
+}
+/* 按钮点击样式 */
+#regBox #regBtn input:active{
+	background: #FFFFFF;
+}
+/* 按钮样式 */
+#regBox #regBtn input{
+	height: 50px;
+	margin-top: 40px;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	border-radius: 10px;
+}

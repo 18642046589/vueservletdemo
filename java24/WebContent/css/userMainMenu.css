@@ -1,0 +1,155 @@
+summary{
+	outline: none;
+}
+#main{
+	width: 1024px;
+	height: 800px;
+	margin: 0 auto;
+}
+#top{
+	width: 1024px;
+	height: 80px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+	 background-blend-mode: multiply,multiply;
+	z-index: 1000;
+}
+#top .top_left{
+	float: left;
+	width: 500px;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+#top .top_left h1{
+	color: white;
+	font-size: 30px;
+	line-height: 66px;
+}
+#top .top_left h1:hover{
+	color: orange;
+}
+#top .top_right{
+	float: right;
+	width: 250px;
+	height: 66px;
+}
+#top .top_right li{
+	color: white;
+	font-size: 14px;
+	line-height: 80px;
+	float: left;
+	padding: 0 8px;
+}
+#top .top_right li:hover{
+	color: orange;
+}
+#main_menu{
+	width: 1024px;
+	height: 800px;
+}
+iframe{
+	width: 800px;
+	height: 790px;
+	float: right;
+	margin-top: 0;
+}
+#main_menu #left_nav{
+	float: left;
+	height: 800px;
+	width: 220px;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	padding-top: 4px;
+	position: absolute;
+}
+#main_menu #left_nav ul .sub_nav span{
+	display: block;
+	padding: 18px 20px 14px 30px;
+	font-size: 20px;
+	top:82px ;
+	color:#FFFFFF;
+	line-height: 30pt;
+}
+#main_menu #left_nav ul .sub_nav span p{
+	text-indent: 2em;
+	font-size: 18px;
+	font-weight: 400;
+	line-height:24pt;
+	color: #FFFFFF;
+}
+#main_menu #left_nav ul .sub_nav span p:hover{
+	color: orange;
+}
+/* 设置表单格式区域 */
+#main_menu .content{
+	float: left;
+	height: 740px;
+	width: 1102px;
+	position: relative;
+	left: 246px;
+	top:64px;
+}
+#main_menu .content form{
+	width: 600px;   
+	font-size: 14px;
+	margin:0 auto;
+} 
+#main_menu .content fieldset{
+	margin: 15px auto;
+	text-align: left;
+	width: 600px;
+	border-radius: 5px;
+} 
+  /*  表单的头的格式 */
+#main_menu .content legend{
+	padding: 3px 12px;
+	border: 1px solid #64A4FF;
+	font-weight: bold;
+} 
+  /* 输入框的格式 */
+#main_menu .content input{
+	margin: 10px;
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid #A9A9A9;
+	margin-top: -5px;   /* 为了让输入框与文本对齐 */
+	
+}
+    /* 输入框标签的格式 */
+#main_menu .content label{
+	width: 140px;
+	float: left;
+	text-align: right;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

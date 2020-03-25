@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+        //让checkones的选中状态与checkall保持一致
+        function selectAll(){
+            //step1获取checkall的选中状态
+            var checkall=document.getElementById("chkall");
+            var flag=checkall.checked;//true/false
+            //step2 让checkone状态与上述状态一致
+            var checkones=document.getElementsByName("chkone");//集合
+            //遍历所有的checkone,使他的状态与上述状态一样
+            for(var i=0;i<checkones.length;i++){
+                checkones[i].checked=flag;
+            }
+        }
+        function chkOne(){
+            var checkall=document.getElementById("chkall");
+            var checkones=document.getElementsByName("chkone");
+            var flag=true;
+            //遍历所有的checkone,如果checkone有一个没有选中,flag=false;
+            for(var i=0;i<checkones.length;i++){
+                if(!checkones[i].checked){
+                    flag=false;
+                }
+            }
+            checkall.checked=flag;
+        }
+    </script>
+</head>
+<body>
+    <form>
+    <input type="checkbox" name="chkall" id="chkall" onclick="selectAll()"/>全选
+	<!-- cellpadding相当于padding  cellspacing相当于margin -->
+    <table width="100%" border="1" align="center" bordercolor="#dadada" cellpadding="0" cellspacing="1">
+    <tr align="center">
+      <td width="44" height="25" valign="middle">选择</td>
+      <td width="98" height="25" valign="middle">姓名</td>
+      <td width="132" height="25" valign="middle">证件类型</td>
+    </tr>
+    <tr align="center">
+      <td width="44" height="25" valign="middle">
+          <input type="checkbox" name="chkone" value="1" onclick="chkOne()"/></td>
+      <td width="98" height="25" valign="middle">用户1</td>
+      <td width="132" height="25" valign="middle">1</td>
+    </tr>
+    <tr align="center">
+      <td width="44" height="25" valign="middle">
+          <input type="checkbox" name="chkone" value="2" onclick="chkOne()"/></td>
+      <td width="98" height="25" valign="middle">用户2</td>
+      <td width="132" height="25" valign="middle">1</td>
+    </tr>
+    </form>
+</body>

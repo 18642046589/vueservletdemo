@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*默认样式重置(css reset)*/
+body,p,h1,h2,h3,h4,h5,h6,dl,dd{
+margin: 0;
+font-size: 12px; 
+/* 中文字体大小的最小值 */
+}
+ol,ul {
+list-style: none; 
+/* 去除列表样式 */
+padding: 0;
+margin: 0;
+}
+a {
+text-decoration: none;
+}
