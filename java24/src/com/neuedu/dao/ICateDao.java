@@ -8,6 +8,6 @@ import com.neuedu.pojo.Cate;
 
 public interface ICateDao {
 
-	List<Cate> findAll() throws DbException, SQLException ;
+	List<Cate> findAll() throws DbException, SQLException;
 
 }
